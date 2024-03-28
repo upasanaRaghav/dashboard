@@ -16,11 +16,11 @@ function createData(trackingNo, name, fat, carbs, protein) {
 }
 
 const rows = [
-  createData("Zepllin", '686.00', 40, 2, "October"),
-  createData("Figma", '864.00', 300, 0, "June"),
-  createData("Meta", '176', 355, 1, "March"),
-  createData("Angular", '49.00', 50, 1, "Feburary"),
-  createData("Vue", '999.00', 100, 1, "October"),
+  createData("Zepllin", '686.00', 40, 2, 22),
+  createData("Figma", '864.00', 300, 0, 100),
+  createData("Meta", '176', 355, 1, 50),
+  createData("Angular", '49.00', 50, 1, 70),
+  createData("Vue", '999.00', 100, 1, 5),
 
 ];
 
