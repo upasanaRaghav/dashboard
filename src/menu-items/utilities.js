@@ -22,35 +22,31 @@ const icons = {
 
 const utilities = {
   id: 'utilities',
-  title: 'Utilities',
+  title: 'DashBoard',
   type: 'group',
   children: [
     {
       id: 'util-typography',
-      title: 'Typography',
+      title: 'DashBoard',
       type: 'item',
-      url: '/typography',
       icon: icons.FontSizeOutlined
     },
     {
       id: 'util-color',
-      title: 'Color',
+      title: 'Messages',
       type: 'item',
-      url: '/color',
       icon: icons.BgColorsOutlined
     },
     {
       id: 'util-shadow',
-      title: 'Shadow',
+      title: 'Friends',
       type: 'item',
-      url: '/shadow',
       icon: icons.BarcodeOutlined
     },
     {
       id: 'ant-icons',
-      title: 'Ant Icons',
+      title: 'Apps',
       type: 'item',
-      url: '/icons/ant',
       icon: icons.AntDesignOutlined,
       breadcrumbs: false
     }

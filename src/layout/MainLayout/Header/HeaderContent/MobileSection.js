@@ -6,7 +6,6 @@ import { AppBar, Box, ClickAwayListener, IconButton, Paper, Popper, Toolbar } fr
 
 // project import
 import Search from './Search';
-import Profile from './Profile';
 import Transitions from 'components/@extended/Transitions';
 
 // assets
@@ -87,7 +86,6 @@ const MobileSection = () => {
                 <AppBar color="inherit">
                   <Toolbar>
                     <Search />
-                    <Profile />
                   </Toolbar>
                 </AppBar>
               </ClickAwayListener>
