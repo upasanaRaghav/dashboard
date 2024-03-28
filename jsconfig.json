@@ -1,7 +1,11 @@
 {
   "compilerOptions": {
     "target": "esnext",
+<<<<<<< HEAD
     "module": "esnext",
+=======
+    "module": "commonjs",
+>>>>>>> c425b4cbd6d1cfd5b7d6a448d381cb3beb64247f
     "baseUrl": "src"
   },
   "include": ["src/**/*"],
