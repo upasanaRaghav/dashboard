@@ -4,7 +4,6 @@ import { useState } from 'react';
 import {
   
   Box,
-  Button,
   Grid,
 
   Stack,
@@ -24,7 +23,7 @@ import PremiumStats from './premium'
 // ==============================|| DASHBOARD - DEFAULT ||============================== //
 
 const DashboardDefault = () => {
-  const [slot, setSlot] = useState('week');
+  const [slot] = useState('week');
 
   return (
     <Grid container rowSpacing={4.5} columnSpacing={2.75}>
@@ -36,16 +35,16 @@ const DashboardDefault = () => {
             <PremiumStats />
           </Grid>
       <Grid item xs={12} sm={6} md={4} lg={3}>
-        <AnalyticEcommerce title="Revenue" count="$56,945" percentage={59.3} extra="35,000" />
+        <AnalyticEcommerce title="Revenue" count="$56,945" percentage={59.3} extra="4.6%" />
       </Grid>
       <Grid item xs={12} sm={6} md={4} lg={3}>
-        <AnalyticEcommerce title="Users" count="76.8%" percentage={76.8} extra="8,900" />
+        <AnalyticEcommerce title="Users" count="76.8%" percentage={76.8} extra="4.6%" />
       </Grid>
       <Grid item xs={12} sm={6} md={4} lg={3}>
-        <AnalyticEcommerce title="New Signups" count="116" percentage={27.4} isLoss color="warning" extra="1,943" />
+        <AnalyticEcommerce title="New Signups" count="116" percentage={27.4} isLoss color="error" extra="4.6%" />
       </Grid>
       <Grid item xs={12} sm={6} md={4} lg={3}>
-        <AnalyticEcommerce title="Retention" count="12.67%" percentage={27.4} isLoss color="warning" extra="$20,395" />
+        <AnalyticEcommerce title="Retention" count="12.67%" percentage={27.4} isLoss color="error" extra="4.6%" />
       </Grid>
 
       <Grid item md={8} sx={{ display: { sm: 'none', md: 'block', lg: 'none' } }} />
@@ -54,26 +53,11 @@ const DashboardDefault = () => {
       <Grid item xs={12} md={7} lg={8}>
         <Grid container alignItems="center" justifyContent="space-between">
           <Grid item>
-            <Typography variant="h5">Unique Visitor</Typography>
+            <Typography variant="h5">Performance</Typography>
           </Grid>
           <Grid item>
             <Stack direction="row" alignItems="center" spacing={0}>
-              <Button
-                size="small"
-                onClick={() => setSlot('month')}
-                color={slot === 'month' ? 'primary' : 'secondary'}
-                variant={slot === 'month' ? 'outlined' : 'text'}
-              >
-                Month
-              </Button>
-              <Button
-                size="small"
-                onClick={() => setSlot('week')}
-                color={slot === 'week' ? 'primary' : 'secondary'}
-                variant={slot === 'week' ? 'outlined' : 'text'}
-              >
-                Week
-              </Button>
+           
             </Stack>
           </Grid>
         </Grid>
@@ -92,7 +76,7 @@ const DashboardDefault = () => {
       <Grid item xs={12} md={7} lg={8}>
         <Grid container alignItems="center" justifyContent="space-between">
           <Grid item>
-            <Typography variant="h5">Recent Orders</Typography>
+            <Typography variant="h5">Installed apps</Typography>
           </Grid>
           <Grid item />
         </Grid>

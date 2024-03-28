@@ -16,16 +16,12 @@ function createData(trackingNo, name, fat, carbs, protein) {
 }
 
 const rows = [
-  createData(84564564, 'Camera Lens', 40, 2, 40570),
-  createData(98764564, 'Laptop', 300, 0, 180139),
-  createData(98756325, 'Mobile', 355, 1, 90989),
-  createData(98652366, 'Handset', 50, 1, 10239),
-  createData(13286564, 'Computer Accessories', 100, 1, 83348),
-  createData(86739658, 'TV', 99, 0, 410780),
-  createData(13256498, 'Keyboard', 125, 2, 70999),
-  createData(98753263, 'Mouse', 89, 2, 10570),
-  createData(98753275, 'Desktop', 185, 1, 98063),
-  createData(98753291, 'Chair', 100, 0, 14001)
+  createData("Zepllin", '686.00', 40, 2, "October"),
+  createData("Figma", '864.00', 300, 0, "June"),
+  createData("Meta", '176', 355, 1, "March"),
+  createData("Angular", '49.00', 50, 1, "Feburary"),
+  createData("Vue", '999.00', 100, 1, "October"),
+
 ];
 
 function descendingComparator(a, b, orderBy) {
@@ -61,19 +57,19 @@ const headCells = [
     id: 'trackingNo',
     align: 'left',
     disablePadding: false,
-    label: 'Tracking No.'
+    label: 'Source'
   },
   {
     id: 'name',
     align: 'left',
     disablePadding: true,
-    label: 'Product Name'
+    label: 'Amount'
   },
   {
     id: 'fat',
     align: 'right',
     disablePadding: false,
-    label: 'Total Order'
+    label: 'User ID'
   },
   {
     id: 'carbs',
@@ -86,7 +82,7 @@ const headCells = [
     id: 'protein',
     align: 'right',
     disablePadding: false,
-    label: 'Total Amount'
+    label: 'Joined'
   }
 ];
 
@@ -129,11 +125,11 @@ const OrderStatus = ({ status }) => {
       break;
     case 1:
       color = 'success';
-      title = 'Approved';
+      title = 'Active';
       break;
     case 2:
       color = 'error';
-      title = 'Rejected';
+      title = 'Cancelled';
       break;
     default:
       color = 'primary';
